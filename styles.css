@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0; /* Often combined to clear inner spacing too */
+}
+:root {
+    --primary-color: #2563EB;
+    --secondary-color: #60A5FA;
+    --third-color: #93C5FD;
+    --fourth-color: #0D1B2A;  /*(color of the highlight card in the 4th section and the footer bg) */
+
+    --subtext-color1: #333333;
+    --subtext-color2: #575757;
+    
+    --subtext-font:'Inter', sans-serif;;
+    --subtext-fontWeight: 400;
+    --subtext-letterSpacing:-0.01em;
+
+    --subtext-color3: #888888;
+    
+    --side-margin: 60px;
+
+}
+a{
+    text-decoration: none;
+    color: var(--subtext-color2);
+}
+.nav-container{
+    /* background-color: beige; */
+    font-family: var(--subtext-font);
+    font-weight: var(--subtext-fontWeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 var(--side-margin);
+    padding: 12px 0;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+.registerNow-btn{
+    height: 56px;
+    width: 192px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 18px;
+    font-family: var(--subtext-font);
+    font-weight: var(--subtext-fontWeight);
+}
+.frontBanner-container{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.80) 13%, rgba(0, 0, 0, 0)), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 786px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+ 
+}
+.frontBanner-heading{
+    font-family: var(--subtext-font);
+    font-weight: bold;
+    font-size: 80px;
+}
+.frontBanner-subheading{
+    font-family: var(--subtext-font);
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0px 90px;
+}
+.frontBanner-part1{
+    margin-bottom: 18%;
+    height: 203px;
+    width: 959px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 180px;
+}
+.registerNow-btn2{
+    width: 282px;
+    height: 74px;
+    margin-left: 40%;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    font-family: var(--subtext-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+ 
+}
+.section-title{
+    font-family: var(--subtext-font);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin: 66px 0 36px;
+}
+.section-sub-title{
+    text-align: center;
+    margin: -10px 0 36px;
+    font-family: var(--subtext-font);
+    font-weight: 400;
+    font-size: 16px;
+    color:var(--subtext-color2);
+}
+.meetTheSpeakers-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;   
+    margin: var(--side-margin);
+    margin-bottom: 150px;
+}
+.box{
+    width: 100%;
+    height: 400px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    overflow: hidden; /* Clips the image corners to match the card radius */
+    display: flex;
+    flex-direction: column;
+}
+.card-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.card-content {
+    row-gap: 9px;
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills{
+    font-family: var(--subtext-font);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.names{
+     font-family: var(--subtext-font);
+    font-weight: 630;
+    font-size: 20px;
+    color: black;
+}
+.intro{
+    font-family: var(--subtext-font);
+    font-weight: 400;
+    font-size: 14px;
+    color:var(--subtext-color2);
+}
+.pricing-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: -70px;
+    padding: 0 7% 0;
+    margin: -6px var(--side-margin);
+    margin-bottom: 10%;
+}
+.card{
+    padding: 25px;
+    border: 1px solid #E5E7EB;
+    border-radius: 15px;
+    height: 380px;
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.card-list{
+    padding: 18px;
+}
+.card-list2{
+    padding: 18px;
+}
+ ol.card-list li::marker {
+    color: var(--primary-color) 
+  }
+ ol.card-list2 li::marker {
+    color: var(--secondary-color) 
+  }
+  .price-card2{
+    color: white;
+    background-color: var(--fourth-color);
+  }
+  /* .price-card-part1{
+    background-color: #2563EB;
+  }
+  .price-card-part2{
+    background-color: antiquewhite;
+  } */
+  .card-divider {
+    border: none;                 
+    height: 1px;                 
+    background-color: #e2e8f0;    
+    margin: 10px 0;              
+    width: 90%;
+}
+
+
+.price-card2 .card-divider {
+    background-color: #5e5f61;  
+}
+.card-btn{
+    background-color: white;
+    color: var(--primary-color);
+    height: 45px;
+    width: 270px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    grid-row-start: 6;
+    margin-top: 5%;
+    font-weight: 560;
+    font-size: 13px;
+    font-family: var(--subtext-font);
+}
+.card-btn-dark{
+    background-color: #2563EB;
+    color: white;
+    height: 45px;
+    width: 270px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    grid-row-start: 6;
+    margin-top: 5%;
+    font-weight: 560;
+    font-size: 13px;
+    font-family: var(--subtext-font);
+}
+.row-span-3{
+    grid-row: 3 / span 3; 
+}
+.price-card-text1{
+    font-weight: 520;
+    font-size: 13px;
+    color:var(--subtext-color2);
+    font-family: var(--subtext-font);
+}
+.price-card-dark-text1{
+    font-weight: 560;
+    font-size: 13px;
+    color:var(--third-color);
+    font-family: var(--subtext-font);
+}
+.price-card-text2{
+    font-size: 50px;
+}
+
+.card-list li {
+    font-family: var(--subtext-font);
+    color: var(--subtext-color2);
+    margin-bottom: 10px; /* Adjust the pixels to get the exact spacing you want */
+}
+.card-list2 li {
+    font-family: var(--subtext-font);
+    color: #b1b0b0;
+    margin-bottom: 10px; /* Adjust the pixels to get the exact spacing you want */
+}
+ 
+.chomok{
+    background-color: #93C5FD;
+    height: 607px;
+    width: 90%;
+    margin: 0 var(--side-margin);
+    margin-bottom: 10px;
+}
+.footer{
+    color: var(--subtext-color3);
+    background-color: var(--fourth-color);
+    height: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-part1{
+        padding: 0 0 0 var(--side-margin);
+}
+.footer-part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 var(--side-margin) 0 0;
+}
+.footer-part2-1-link{
+    color: var(--subtext-color3);
+}
+.footer-part2-1{
+    text-align: center;
+}
