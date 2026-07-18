@@ -260,7 +260,18 @@ a{
 .price-card-text2{
     font-size: 50px;
 }
-
+.price-card-text3{
+   font-weight: 400;
+    font-size: 13px;
+    color:#888888;
+    font-family: var(--subtext-font);
+}
+.price-dark-card-text3{
+    font-weight: 400;
+    font-size: 13px;
+    color:#a8a8a8;
+    font-family: var(--subtext-font);
+}
 .card-list li {
     font-family: var(--subtext-font);
     color: var(--subtext-color2);
