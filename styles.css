@@ -272,13 +272,13 @@ a{
     margin-bottom: 10px; /* Adjust the pixels to get the exact spacing you want */
 }
  
-.chomok{
+/* .chomok{
     background-color: #93C5FD;
     height: 607px;
     width: 90%;
     margin: 0 var(--side-margin);
     margin-bottom: 10px;
-}
+} */
 .footer{
     color: var(--subtext-color3);
     background-color: var(--fourth-color);
@@ -304,4 +304,184 @@ a{
 }
 .footer-part2-1{
     text-align: center;
+}
+/* ------------------------------
+   Learning Tracks
+------------------------------ */
+
+.tracks-section{
+    padding:90px 0;
+    background:#fff;
+}
+
+.container{
+    width:min(1180px,90%);
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 60px;
+}
+
+.section-label{
+    display:inline-block;
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:1.8px;
+    color:#3563ff;
+    margin-bottom:12px;
+}
+
+.section-heading h2{
+    font-size:3rem;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:16px;
+}
+
+.section-heading p{
+    color:#6b7280;
+    line-height:1.7;
+    font-size:1.05rem;
+}
+
+/* Grid */
+
+.tracks-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+/* Card */
+
+.track-card{
+    position:relative;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:34px 28px;
+    overflow:hidden;
+    transition:
+        transform .45s cubic-bezier(.22,1,.36,1),
+        box-shadow .45s cubic-bezier(.22,1,.36,1),
+        border-color .35s ease;
+}
+
+/* Decorative Accent */
+
+.track-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#3563ff;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .45s cubic-bezier(.22,1,.36,1);
+}
+
+.track-card:hover{
+    transform:translateY(-10px);
+    border-color:#d6dfff;
+    box-shadow:
+        0 18px 45px rgba(15,23,42,.10);
+}
+
+.track-card:hover::before{
+    transform:scaleX(1);
+}
+
+.track-badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.8px;
+    margin-bottom:20px;
+}
+
+.ai{
+    color:#2563eb;
+    background:#eaf1ff;
+}
+
+.cloud{
+    color:#4f46e5;
+    background:#ecebff;
+}
+
+.front{
+    color:#0891b2;
+    background:#e6f8fc;
+}
+
+.security{
+    color:#0f766e;
+    background:#dffcf8;
+}
+
+.track-card h3{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:14px;
+}
+
+.track-card p{
+    color:#6b7280;
+    line-height:1.7;
+    margin-bottom:24px;
+}
+
+.track-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.track-card li{
+    position:relative;
+    padding-left:20px;
+    margin-bottom:12px;
+    color:#374151;
+    font-size:.95rem;
+}
+
+.track-card li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:9px;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#3563ff;
+}
+
+/* Responsive */
+
+@media (max-width:1100px){
+
+    .tracks-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:700px){
+
+    .section-heading h2{
+        font-size:2.2rem;
+    }
+
+    .tracks-grid{
+        grid-template-columns:1fr;
+    }
+
 }
